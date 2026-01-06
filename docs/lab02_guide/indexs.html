@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU Campus Guide | เว็บแนะนำสถานที่ภายในมหาวิทยาลัยขอนแก่น</title>
+    <!-- โหลด Tailwind CSS CDN สำหรับการจัด Layout และ Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body class="text-gray-900">
+
+    <!-- HEADER: ส่วนหัวเว็บ (Semantic: header) -->
+    <header class="theme-brick text-white p-4 shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+            <!-- โลโก้ KKU พร้อมอนิเมชัน -->
+            <div class="flex items-center space-x-3">
+                <!-- KKU Logo (SVG พร้อม Animation) --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="currentColor" class="w-8 h-8 text-white">
+                    <path class="animated-star"
+                        d="M11.474 4.078a.56.56 0 011.052 0L14.73 7.828a.5.5 0 00.3.177l4.088.595a.56.56 0 01.313.954l-2.956 2.88a.5.5 0 00-.144.444l.698 4.073a.56.56 0 01-.813.59L12 17.65l-3.64 1.916a.56.56 0 01-.813-.59l.698-4.073a.5.5 0 00-.144-.444l-2.956-2.88a.56.56 0 01.313-.954l4.088-.595a.5.5 0 00.3-.177l2.193-3.75z" />
+                </svg>
+                <h1 class="text-xl font-bold tracking-widest uppercase flex">
+                    <span class="animated-text-segment">K</span>
+                    <span class="animated-text-segment">K</span>
+                    <span class="animated-text-segment">U</span>
+                    <span class="animated-text-segment">&nbsp;</span>
+                    <span class="animated-text-segment">G</span>
+                    <span class="animated-text-segment">uide</span>
+                </h1>
+            </div>
+
+            <!-- NAV: เมนูนำทาง (Semantic: nav) -->
+            <nav>
+                <ul class="flex space-x-4 text-sm font-medium">
+                    <li><a href="#home" class="hover:text-red-200 transition duration-300">หน้าหลัก</a></li>
+                    <li><a href="#locations" class="hover:text-red-200 transition duration-300">สถานที่แนะนำ</a></li>
+                    <li><a href="#map" class="hover:text-red-200 transition duration-300">แผนที่</a></li>
+                    <li><a href="#contact" class="hover:text-red-200 transition duration-300">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN: เนื้อหาหลักของหน้าเว็บ (Semantic: main) -->
+    <main class="max-w-7xl mx-auto p-4 md:p-8 space-y-12">
+
+        <!-- ASIDE: ข้อมูลนักศึกษา (Semantic: aside) -->
+        <aside class="bg-white p-4 rounded-lg card-shadow theme-brick-text border-l-4 border-red-700" id="student-info">
+            <p class="text-lg font-bold">ยินดีต้อนรับสู่ KKU Campus Guide</p>
+            <p class="text-lg opacity-90">
+                เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำสถานที่สำคัญในมหาวิทยาลัยขอนแก่น
+                เหมาะสำหรับนักศึกษาใหม่ นักท่องเที่ยว และผู้ที่สนใจเยี่ยมชม มข.
+                เราได้รวบรวมสถานที่ห้ามพลาด พร้อมรูปภาพ ข้อมูล และเส้นทางเบื้องต้น
+                เพื่อช่วยให้การเดินทางของคุณง่ายและสนุกยิ่งขึ้น ❤
+            </p>
+            <p class="mt-3 text-sm text-gray-500">
+                จัดทำโดย : <b>6633380384-9 น.ส.ณิชากานต์ คนกลาง</b>
+            </p>
+        </aside>
+
+        <!-- SECTION: สถานที่แนะนำ (Semantic: section) -->
+        <section id="locations" class="space-y-6">
+            <h2 class="text-3xl font-extrabold theme-brick-text border-b-2 border-red-200 pb-2">
+                สถานที่แนะนำภายในมหาวิทยาลัย
+            </h2>
+
+            <!-- GRID Layout สำหรับสถานที่แนะนำ (ใช้ Grid) -->
+            <div class="guide-grid">
+
+                <!-- ARTICLE 1: ศูนย์ประชุมอเนกประสงค์กาญจนาภิเษก -->
+                <article class="bg-white p-6 rounded-xl card-shadow flex flex-col">
+                    <h3 class="text-2xl font-bold mb-3 theme-brick-text">1. ศูนย์ประชุมฯ กาญจนาภิเษก</h3>
+                    <p class="text-sm mb-4 text-gray-600">KKU Golden Jubilee Convention Center</p>
+
+                    <div class="space-y-4 mb-4">
+                        <figure>
+                            <img src="Image/หอกาญ.png" alt="ภาพด้านหน้าศูนย์ประชุมกาญจนาภิเษก"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                มุมกว้างของอาคารศูนย์ประชุมฯ
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Image/ภายในหอกาญ.jpg" alt="ภาพภายในห้องประชุมใหญ่"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                บรรยากาศภายในห้องจัดแสดง
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p class="flex-grow text-gray-700">
+                        เป็นอาคารขนาดใหญ่ที่ใช้สำหรับจัดงานประชุมระดับชาติ, งานรับปริญญา, และอีเวนต์สำคัญต่างๆ
+                        มีพื้นที่กว้างขวางและสถาปัตยกรรมที่โดดเด่น
+                        ถือเป็นแลนด์มาร์คสำคัญที่ใช้ในการต้อนรับแขกของมหาวิทยาลัย
+                        นักศึกษามักมาใช้พื้นที่บริเวณด้านนอกสำหรับการถ่ายภาพ และกิจกรรมอื่นๆ
+                    </p>
+                </article>
+
+                <!-- ARTICLE 2: สำนักหอสมุดกลาง -->
+                <article class="bg-white p-6 rounded-xl card-shadow flex flex-col">
+                    <h3 class="text-2xl font-bold mb-3 theme-brick-text">2. สำนักหอสมุดกลาง</h3>
+                    <p class="text-sm mb-4 text-gray-600">The KKU Library</p>
+
+                    <div class="space-y-4 mb-4">
+                        <figure>
+                            <img src="Image/หอสมุด.png" alt="ภาพอาคารสำนักหอสมุดกลาง"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                อาคารหอสมุดกลางสูงตระหง่าน
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Image/บรรยากาศหอสมุด.jpg" alt="ภาพมุมอ่านหนังสือภายในหอสมุด"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                มุมเงียบสงบสำหรับอ่านหนังสือ
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p class="flex-grow text-gray-700">
+                        เป็นแหล่งรวมความรู้และศูนย์กลางการศึกษาของนักศึกษาและบุคลากร
+                        ให้บริการห้องสมุดที่ทันสมัย มีพื้นที่อ่านหนังสือ ห้องค้นคว้า ห้องประชุมกลุ่มย่อย
+                        และมีบริการออนไลน์ที่สนับสนุนการเรียนรู้ตลอด 24 ชั่วโมง
+                        เป็นสถานที่ยอดนิยมสำหรับนักศึกษาที่ต้องการเตรียมตัวสอบหรือทำงานวิจัย
+                    </p>
+                </article>
+
+                <!-- ARTICLE 3: ตลาดนัดมะลิวัลย์ (นอกพื้นที่แต่เป็นจุดสำคัญของนักศึกษา) -->
+                <article class="bg-white p-6 rounded-xl card-shadow flex flex-col">
+                    <h3 class="text-2xl font-bold mb-3 theme-brick-text">3. เปิดท้าย มข.</h3>
+                    <p class="text-sm mb-4 text-gray-600">Kaen University (KKU) Open Market</p>
+
+                    <div class="space-y-4 mb-4">
+                        <figure>
+                            <img src="Image/เปิดท้าย.jpg" alt="ภาพบรรยากาศร้านอาหารในตลาด"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                ร้านขายอาหารและของใช้มากมาย
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Image/บรรยากาศเปิดท้าย.jpg" alt="ภาพฝูงชนในตลาด"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                บรรยากาศคึกคักยามเย็นของตลาดเปิดท้าย
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p class="flex-grow text-gray-700">
+                        ตลาดเปิดท้ายเป็นหนึ่งในแหล่งรวมตัวที่ได้รับความนิยมที่สุดของนิสิตนักศึกษา
+                        มีทั้งอาหาร เสื้อผ้า ของใช้ และสินค้าแฟชั่นราคาย่อมเยาว์
+                        เปิดให้บริการช่วงเย็นและคึกคักเป็นพิเศษในวันศุกร์–เสาร์
+                        เป็นสถานที่พักผ่อน เดินเล่น และเลือกซื้อของที่ต้องการได้อย่างสบาย ๆ
+                    </p>
+                </article>
+
+                <!-- ARTICLE 4: หอพักนักศึกษาที่ 9 -->
+                <article class="bg-white p-6 rounded-xl card-shadow flex flex-col">
+                    <h3 class="text-2xl font-bold mb-3 theme-brick-text">4. แปลงกังหัน ทุ่งดอกไม้นานาพรรณ</h3>
+                    <p class="text-sm mb-4 text-gray-600">KKU Agro Village</p>
+
+                    <div class="space-y-4 mb-4">
+                        <figure>
+                            <img src="Image/แปลงดอกไม้.jpg" alt="แปลงดอกไม้"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                แปลงดอกไม้หลากสีสัน เหมาะแก่การพักผ่อนและถ่ายรูป
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Image/ทุ่งดอกไม้.jpg" alt="ทุ่งดอกไม้"
+                                class="w-full h-48 object-cover rounded-lg">
+                            <figcaption class="text-xs text-center mt-1 text-gray-500">
+                                บรรยากาศทุ่งดอกไม้ที่สวยงามภายในพื้นที่มหาวิทยาลัย
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p class="flex-grow text-gray-700">
+                        ทุ่งดอกไม้ภายในมหาวิทยาลัยขอนแก่นเป็นจุดชมวิวและถ่ายภาพยอดนิยม
+                        มีการปลูกดอกไม้ตามฤดูกาล ทำให้เห็นสีสันแตกต่างในแต่ละช่วงปี
+                        บรรยากาศร่มรื่น เหมาะแก่การเดินเล่น พักผ่อน และเป็นสถานที่ที่นักนิสิตมักมาเก็บภาพความประทับใจ
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="map-contact-area">
+
+            <!-- ARTICLE: แบบฟอร์มติดต่อ/แนะนำ (Semantic: form inside article) -->
+            <article id="contact" class="lg:col-span-1 bg-white p-6 rounded-xl card-shadow">
+                <h2 class="text-2xl font-bold mb-4 theme-brick-text">แนะนำสถานที่ / ติดต่อเรา</h2>
+                <form class="space-y-4">
+                    <!-- INPUT: ชื่อ -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">ชื่อ-สกุล</label>
+                        <input type="text" id="name" name="name" placeholder="น.ส.ณิชากานต์ คนกลาง" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 
+                                      focus:border-red-500 focus:ring-red-500 border" required>
+                    </div>
+                    <!-- INPUT: อีเมล -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">อีเมล</label>
+                        <input type="email" id="email" name="email" placeholder="example@kku.ac.th" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 
+                                      focus:border-red-500 focus:ring-red-500 border" required>
+                    </div>
+                    <!-- TEXTAREA: ข้อเสนอแนะ -->
+                    <div>
+                        <label for="suggestion" class="block text-sm font-medium text-gray-700">ข้อเสนอแนะ /
+                            แนะนำสถานที่ใหม่</label>
+                        <textarea id="suggestion" name="suggestion" rows="4" placeholder="พิมพ์ข้อความของคุณที่นี่..."
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 
+                                         focus:border-red-500 focus:ring-red-500 border" required></textarea>
+                    </div>
+                    <!-- BUTTON: ส่งข้อมูล -->
+                    <div>
+                        <button type="submit" class="w-full theme-brick text-white py-2 px-4 rounded-md 
+                                       hover:bg-red-800 transition duration-300 font-semibold shadow-md">
+                            ส่งข้อมูล
+                        </button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: ส่วนท้ายเว็บ (Semantic: footer) -->
+    <footer class="theme-dark text-white mt-12 p-6">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p>&copy; 2024 KKU Campus Guide. จัดทำโดย น.ส.ณิชากานต์ คนกลาง (6633380384-9)</p>
+            <p class="mt-2 text-gray-400">แบบฝึกปฏิบัติการที่ 2: เว็บแนะนำสถานที่ภายในมหาวิทยาลัยขอนแก่น</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
